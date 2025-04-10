@@ -1,5 +1,5 @@
 
-import { GitHub, Linkedin, Twitter, Mail } from "lucide-react";
+import { Github, Linkedin, Twitter, Mail } from "lucide-react";
 
 export default function Footer() {
   return (
@@ -10,7 +10,7 @@ export default function Footer() {
           
           <div className="flex space-x-4 mb-6">
             <a href="#" className="h-10 w-10 rounded-full bg-background flex items-center justify-center hover:bg-primary hover:text-white transition-colors">
-              <GitHub size={20} />
+              <Github size={20} />
             </a>
             <a href="#" className="h-10 w-10 rounded-full bg-background flex items-center justify-center hover:bg-primary hover:text-white transition-colors">
               <Linkedin size={20} />

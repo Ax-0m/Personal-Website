@@ -1,5 +1,5 @@
 
-import { ExternalLink, GitHub } from "lucide-react";
+import { ExternalLink, Github } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 
@@ -85,7 +85,7 @@ export default function Projects() {
                 target="_blank" 
                 rel="noopener noreferrer"
               >
-                <GitHub size={16} className="mr-1" /> Source Code
+                <Github size={16} className="mr-1" /> Source Code
               </a>
             </CardFooter>
           </Card>
@@ -99,7 +99,7 @@ export default function Projects() {
           rel="noopener noreferrer"
           className="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-primary hover:bg-primary/90 transition-colors"
         >
-          <GitHub size={20} className="mr-2" />
+          <Github size={20} className="mr-2" />
           View More on GitHub
         </a>
       </div>
