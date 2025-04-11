@@ -22,12 +22,20 @@ export default function Navbar() {
     };
   }, []);
 
+  const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, id: string) => {
+    e.preventDefault();
+    document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
+    if (isMenuOpen) {
+      setIsMenuOpen(false);
+    }
+  };
+
   const navLinks = [
-    { name: 'Home', href: '#home' },
-    { name: 'About', href: '#about' },
-    { name: 'Skills', href: '#skills' },
-    { name: 'Projects', href: '#projects' },
-    { name: 'Contact', href: '#contact' },
+    { name: 'Home', href: '#home', id: 'home' },
+    { name: 'About', href: '#about', id: 'about' },
+    { name: 'Skills', href: '#skills', id: 'skills' },
+    { name: 'Projects', href: '#projects', id: 'projects' },
+    { name: 'Contact', href: '#contact', id: 'contact' },
   ];
 
   return (
@@ -40,7 +48,13 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
         <div className="flex justify-between items-center py-4 md:py-6">
           <div className="flex justify-start lg:w-0 lg:flex-1">
-            <a href="#" className="font-bold text-xl md:text-2xl text-gradient">Portfolio</a>
+            <a 
+              href="#home" 
+              className="font-bold text-xl md:text-2xl text-gradient"
+              onClick={(e) => handleNavClick(e, 'home')}
+            >
+              Portfolio
+            </a>
           </div>
           
           {/* Desktop navigation */}
@@ -50,6 +64,7 @@ export default function Navbar() {
                 key={link.name}
                 href={link.href}
                 className="text-sm font-medium transition-colors hover:text-primary"
+                onClick={(e) => handleNavClick(e, link.id)}
               >
                 {link.name}
               </a>
@@ -83,7 +98,7 @@ export default function Navbar() {
                 key={link.name}
                 href={link.href}
                 className="block px-3 py-2 rounded-md text-base font-medium hover:text-primary hover:bg-gray-100"
-                onClick={() => setIsMenuOpen(false)}
+                onClick={(e) => handleNavClick(e, link.id)}
               >
                 {link.name}
               </a>

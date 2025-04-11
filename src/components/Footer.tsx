@@ -6,7 +6,7 @@ export default function Footer() {
     <footer className="bg-secondary/50 py-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
         <div className="flex flex-col items-center">
-          <div className="text-2xl font-bold text-gradient mb-4">Your Name</div>
+          <div className="text-2xl font-bold text-gradient mb-4">Prakhar</div>
           
           <div className="flex space-x-4 mb-6">
             <a href="#" className="h-10 w-10 rounded-full bg-background flex items-center justify-center hover:bg-primary hover:text-white transition-colors">
@@ -24,15 +24,60 @@ export default function Footer() {
           </div>
           
           <div className="flex flex-wrap justify-center gap-x-6 gap-y-2 mb-6">
-            <a href="#home" className="text-sm text-muted-foreground hover:text-primary">Home</a>
-            <a href="#about" className="text-sm text-muted-foreground hover:text-primary">About</a>
-            <a href="#skills" className="text-sm text-muted-foreground hover:text-primary">Skills</a>
-            <a href="#projects" className="text-sm text-muted-foreground hover:text-primary">Projects</a>
-            <a href="#contact" className="text-sm text-muted-foreground hover:text-primary">Contact</a>
+            <a 
+              href="#home" 
+              className="text-sm text-muted-foreground hover:text-primary"
+              onClick={(e) => {
+                e.preventDefault();
+                document.getElementById('home')?.scrollIntoView({ behavior: 'smooth' });
+              }}
+            >
+              Home
+            </a>
+            <a 
+              href="#about" 
+              className="text-sm text-muted-foreground hover:text-primary"
+              onClick={(e) => {
+                e.preventDefault();
+                document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' });
+              }}
+            >
+              About
+            </a>
+            <a 
+              href="#skills" 
+              className="text-sm text-muted-foreground hover:text-primary"
+              onClick={(e) => {
+                e.preventDefault();
+                document.getElementById('skills')?.scrollIntoView({ behavior: 'smooth' });
+              }}
+            >
+              Skills
+            </a>
+            <a 
+              href="#projects" 
+              className="text-sm text-muted-foreground hover:text-primary"
+              onClick={(e) => {
+                e.preventDefault();
+                document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' });
+              }}
+            >
+              Projects
+            </a>
+            <a 
+              href="#contact" 
+              className="text-sm text-muted-foreground hover:text-primary"
+              onClick={(e) => {
+                e.preventDefault();
+                document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
+              }}
+            >
+              Contact
+            </a>
           </div>
           
           <div className="text-sm text-muted-foreground">
-            &copy; {new Date().getFullYear()} Your Name. All rights reserved.
+            &copy; {new Date().getFullYear()} Prakhar. All rights reserved.
           </div>
         </div>
       </div>

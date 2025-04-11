@@ -14,7 +14,7 @@ export default function Hero() {
       
       <div className="max-w-4xl mx-auto text-center">
         <h1 className="animate-fade-in opacity-0 [animation-delay:300ms] text-4xl sm:text-5xl md:text-7xl font-bold tracking-tight mb-6">
-          Hi, I'm <span className="text-gradient">Your Name</span>
+          Hi, I'm <span className="text-gradient">Prakhar</span>
         </h1>
         
         <div className="animate-fade-in opacity-0 [animation-delay:600ms] h-12 sm:h-20 mb-6 overflow-hidden">
@@ -36,12 +36,20 @@ export default function Hero() {
           <a 
             href="#projects" 
             className="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-primary hover:bg-primary/90 transition-colors"
+            onClick={(e) => {
+              e.preventDefault();
+              document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' });
+            }}
           >
             View My Work
           </a>
           <a 
             href="#about" 
             className="inline-flex items-center justify-center px-6 py-3 border border-primary text-base font-medium rounded-md text-primary bg-transparent hover:bg-primary/10 transition-colors"
+            onClick={(e) => {
+              e.preventDefault();
+              document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' });
+            }}
           >
             About Me
           </a>
@@ -49,7 +57,14 @@ export default function Hero() {
       </div>
       
       <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
-        <a href="#about" className="flex items-center justify-center h-10 w-10 rounded-full bg-primary/10 text-primary">
+        <a 
+          href="#about" 
+          className="flex items-center justify-center h-10 w-10 rounded-full bg-primary/10 text-primary"
+          onClick={(e) => {
+            e.preventDefault();
+            document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' });
+          }}
+        >
           <ArrowDown size={20} />
         </a>
       </div>
