@@ -9,16 +9,16 @@ export default function Footer() {
           <div className="text-2xl font-bold text-gradient mb-4">Prakhar</div>
           
           <div className="flex space-x-4 mb-6">
-            <a href="#" className="h-10 w-10 rounded-full bg-background flex items-center justify-center hover:bg-primary hover:text-white transition-colors">
+            <a href="https://github.com/Prakhar-Kumar-1314" target="_blank" rel="noopener noreferrer" className="h-10 w-10 rounded-full bg-background flex items-center justify-center hover:bg-primary hover:text-white transition-colors">
               <Github size={20} />
             </a>
-            <a href="#" className="h-10 w-10 rounded-full bg-background flex items-center justify-center hover:bg-primary hover:text-white transition-colors">
+            <a href="https://www.linkedin.com/in/prakhar-kumar-059aa4265/" target="_blank" rel="noopener noreferrer" className="h-10 w-10 rounded-full bg-background flex items-center justify-center hover:bg-primary hover:text-white transition-colors">
               <Linkedin size={20} />
             </a>
-            <a href="#" className="h-10 w-10 rounded-full bg-background flex items-center justify-center hover:bg-primary hover:text-white transition-colors">
+            <a href="https://x.com/_PrakharKumar" target="_blank" rel="noopener noreferrer" className="h-10 w-10 rounded-full bg-background flex items-center justify-center hover:bg-primary hover:text-white transition-colors">
               <Twitter size={20} />
             </a>
-            <a href="mailto:youremail@example.com" className="h-10 w-10 rounded-full bg-background flex items-center justify-center hover:bg-primary hover:text-white transition-colors">
+            <a href="mailto:prakharkumar1314@gmail.com" className="h-10 w-10 rounded-full bg-background flex items-center justify-center hover:bg-primary hover:text-white transition-colors">
               <Mail size={20} />
             </a>
           </div>

@@ -60,8 +60,8 @@ export default function Contact() {
                 </div>
                 <div>
                   <h4 className="font-medium">Email</h4>
-                  <a href="mailto:youremail@example.com" className="text-primary hover:underline">
-                    youremail@example.com
+                  <a href="mailto:prakharkumar1314@gmail.com" className="text-primary hover:underline">
+                    prakharkumar1314@gmail.com
                   </a>
                 </div>
               </div>
@@ -73,11 +73,11 @@ export default function Contact() {
                 <div>
                   <h4 className="font-medium">Social Media</h4>
                   <div className="flex space-x-2 mt-1">
-                    <a href="#" className="text-muted-foreground hover:text-primary transition-colors">LinkedIn</a>
+                    <a href="https://www.linkedin.com/in/prakhar-kumar-059aa4265/" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">LinkedIn</a>
                     <span className="text-muted-foreground">•</span>
-                    <a href="#" className="text-muted-foreground hover:text-primary transition-colors">Twitter</a>
+                    <a href="https://x.com/_PrakharKumar" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">Twitter</a>
                     <span className="text-muted-foreground">•</span>
-                    <a href="#" className="text-muted-foreground hover:text-primary transition-colors">GitHub</a>
+                    <a href="https://github.com/Prakhar-Kumar-1314" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">GitHub</a>
                   </div>
                 </div>
               </div>
