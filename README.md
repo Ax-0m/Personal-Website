@@ -1,73 +1,80 @@
-# Welcome to your Lovable project
+# Personal Portfolio Website
 
-## Project info
+A modern, responsive personal portfolio website built with Next.js and TypeScript.
 
-**URL**: https://lovable.dev/projects/aa4a51c9-0a5c-49d7-bda6-c6c526a39b06
+## 🚀 Features
 
-## How can I edit this code?
+- Modern UI with Tailwind CSS and shadcn/ui
+- Responsive design for all devices
+- Dark/Light mode support
+- Contact form with EmailJS integration
+- Smooth animations and transitions
+- SEO optimized
 
-There are several ways of editing your application.
+## 🛠️ Tech Stack
 
-**Use Lovable**
+- **Framework**: Next.js
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS
+- **UI Components**: shadcn/ui
+- **Email Service**: EmailJS
+- **Animations**: Custom CSS animations
+- **Icons**: Lucide Icons
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/aa4a51c9-0a5c-49d7-bda6-c6c526a39b06) and start prompting.
+## 🚀 Getting Started
 
-Changes made via Lovable will be committed automatically to this repo.
+1. **Clone the repository**
 
-**Use your preferred IDE**
+```bash
+git clone https://github.com/your-username/personal-website.git
+cd personal-website
+```
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+2. **Install dependencies**
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+```bash
+npm install
+```
 
-Follow these steps:
+3. **Set up environment variables**
+   Create a `.env.local` file in the root directory with the following variables:
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+```bash
+NEXT_PUBLIC_EMAILJS_SERVICE_ID=your_service_id
+NEXT_PUBLIC_EMAILJS_TEMPLATE_ID=your_template_id
+NEXT_PUBLIC_EMAILJS_PUBLIC_KEY=your_public_key
+```
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+4. **Run the development server**
 
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+```bash
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+Visit `http://localhost:3000` to view the website.
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## 📧 Email Configuration
 
-**Use GitHub Codespaces**
+This project uses EmailJS for the contact form. To set it up:
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+1. Create an account at [EmailJS](https://www.emailjs.com/)
+2. Create an email service and email template
+3. Update the environment variables with your credentials
 
-## What technologies are used for this project?
+## 🎨 Customization
 
-This project is built with:
+- **Colors**: Edit `tailwind.config.js` to modify the color scheme
+- **Content**: Update components in `/src/components` to modify content
+- **Styles**: Modify styles in the respective component files
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+## 📱 Contact
 
-## How can I deploy this project?
+For any queries or suggestions, feel free to reach out:
 
-Simply open [Lovable](https://lovable.dev/projects/aa4a51c9-0a5c-49d7-bda6-c6c526a39b06) and click on Share -> Publish.
+- Email: prakharkumar1314@gmail.com
+- LinkedIn: [Prakhar Kumar](https://www.linkedin.com/in/prakhar-kumar-059aa4265/)
+- Twitter: [@\_PrakharKumar](https://x.com/_PrakharKumar)
 
-## Can I connect a custom domain to my Lovable project?
+## 📄 License
 
-Yes it is!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+This project is open source and available under the [MIT License](LICENSE).

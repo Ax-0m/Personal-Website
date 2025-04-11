@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Mail, MessageSquare, Send } from "lucide-react";
 import emailjs from '@emailjs/browser';
 import { Button } from "@/components/ui/button";
@@ -7,6 +7,9 @@ import { Textarea } from "@/components/ui/textarea";
 import { toast } from "sonner";
 import { Label } from "@/components/ui/label";
 import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
+
+// Initialize EmailJS
+emailjs.init('sMnCOCzwAYEW74Llr');
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -34,18 +37,16 @@ export default function Contact() {
     
     setIsSubmitting(true);
 
-    // Replace these with your actual EmailJS credentials
     emailjs.send(
-      'service_rb9folu',  // Create service ID in EmailJS
-      'template_q0zl1k1', // Create email template in EmailJS
+      'service_wlwdxs2',
+      'template_x7cfnq7',
       {
         from_name: formData.name,
         from_email: formData.email,
         message: formData.message,
-        to_name: 'Prakhar', // Your name
+        to_name: 'Prakhar',
         reply_to: formData.email,
-      },
-      'sMnCOCzwAYEW74Llr'   // Your EmailJS public key
+      }
     )
     .then((response) => {
       console.log('SUCCESS!', response.status, response.text);
