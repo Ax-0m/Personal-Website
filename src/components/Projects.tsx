@@ -6,12 +6,12 @@ import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle }
 export default function Projects() {
   const projects = [
     {
-      title: "Modern Web Portfolio",
-      description: "A responsive portfolio website built with React and Tailwind CSS, showcasing my projects and skills.",
-      image: "/placeholder.svg",
-      tags: ["React", "TypeScript", "Tailwind CSS", "Responsive"],
-      demoLink: "#",
-      repoLink: "#"
+      title: "Gamblers-Dilemma",
+      description: "A comprehensive website to understand the house edge in gambling through various games.",
+      image: "/anti-gambling.png",
+      tags: ["React", "Express.js", "Tailwind CSS", "MongoDb"],
+      demoLink: "https://anti-gambling-frontend.onrender.com/",
+      repoLink: "https://github.com/Prakhar-Kumar-1314/Gamblers-Dilemma"
     },
     {
       title: "AI Image Generator",
