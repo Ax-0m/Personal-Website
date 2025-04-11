@@ -1,6 +1,6 @@
-
 import { useState } from "react";
 import { Mail, MessageSquare, Send } from "lucide-react";
+import emailjs from '@emailjs/browser';
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -33,10 +33,22 @@ export default function Contact() {
     }
     
     setIsSubmitting(true);
-    
-    // Simulate form submission with a delayed response
-    setTimeout(() => {
-      console.log("Form submitted:", formData);
+
+    // Replace these with your actual EmailJS credentials
+    emailjs.send(
+      'service_rb9folu',  // Create service ID in EmailJS
+      'template_q0zl1k1', // Create email template in EmailJS
+      {
+        from_name: formData.name,
+        from_email: formData.email,
+        message: formData.message,
+        to_name: 'Prakhar', // Your name
+        reply_to: formData.email,
+      },
+      'sMnCOCzwAYEW74Llr'   // Your EmailJS public key
+    )
+    .then((response) => {
+      console.log('SUCCESS!', response.status, response.text);
       toast.success("Message sent! I'll get back to you soon.");
       
       // Reset form
@@ -51,7 +63,12 @@ export default function Contact() {
       
       // Reset the sent state after 5 seconds
       setTimeout(() => setIsSent(false), 5000);
-    }, 1500);
+    })
+    .catch((err) => {
+      console.error('FAILED...', err);
+      toast.error("Failed to send message. Please try again.");
+      setIsSubmitting(false);
+    });
   };
 
   return (
