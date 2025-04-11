@@ -6,7 +6,7 @@ export default function Footer() {
     <footer className="bg-secondary/50 py-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
         <div className="flex flex-col items-center">
-          <div className="text-2xl font-bold text-gradient mb-4">Prakhar</div>
+          <div className="text-2xl font-bold text-gradient mb-4">Prakhar Kumar</div>
           
           <div className="flex space-x-4 mb-6">
             <a href="https://github.com/Prakhar-Kumar-1314" target="_blank" rel="noopener noreferrer" className="h-10 w-10 rounded-full bg-background flex items-center justify-center hover:bg-primary hover:text-white transition-colors">
