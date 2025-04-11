@@ -1,80 +1,106 @@
-# Personal Portfolio Website
+# 🚀 Personal Portfolio Website
 
-A modern, responsive personal portfolio website built with Next.js and TypeScript.
+A modern, responsive personal portfolio website showcasing my projects, skills, and journey in tech. Built with React, TypeScript, and modern web technologies.
 
-## 🚀 Features
+![Portfolio Preview](public/portfolio-preview.png)
 
-- Modern UI with Tailwind CSS and shadcn/ui
-- Responsive design for all devices
-- Dark/Light mode support
-- Contact form with EmailJS integration
-- Smooth animations and transitions
-- SEO optimized
+## ✨ Features
+
+- 🎨 **Modern Design** - Clean and professional UI with smooth animations
+- 📱 **Fully Responsive** - Perfect display on all devices
+- 🌙 **Dynamic UI Components** - Built with shadcn/ui for consistent design
+- 📧 **Contact Form** - Integrated with EmailJS for seamless communication
+- ⚡ **Fast Performance** - Optimized loading and rendering
+- 🎯 **Smooth Navigation** - Seamless scrolling and section transitions
+- 🔍 **SEO Optimized** - Meta tags and sitemap included
 
 ## 🛠️ Tech Stack
 
-- **Framework**: React.js
-- **Language**: TypeScript
-- **Styling**: Tailwind CSS
-- **UI Components**: shadcn/ui
-- **Email Service**: EmailJS
+- **Frontend Framework**: React with TypeScript
+- **Build Tool**: Vite
+- **Styling**: 
+  - Tailwind CSS for utility-first styling
+  - shadcn/ui for UI components
 - **Animations**: Custom CSS animations
 - **Icons**: Lucide Icons
+- **Contact**: EmailJS integration
+- **Package Manager**: Bun
 
-## 🚀 Getting Started
+## 🚀 Quick Start
 
 1. **Clone the repository**
-
-```bash
-git clone https://github.com/your-username/personal-website.git
-cd personal-website
-```
+   ```bash
+   git clone https://github.com/Prakhar-Kumar-1314/Personal-Website.git
+   cd Personal-Website
+   ```
 
 2. **Install dependencies**
+   ```bash
+   # Using Bun (recommended)
+   bun install
 
-```bash
-npm install
+   # Using npm
+   npm install
+   ```
+
+3. **Start development server**
+   ```bash
+   bun run dev
+   ```
+
+4. **Build for production**
+   ```bash
+   bun run build
+   ```
+
+## 📁 Project Structure
+
+```
+src/
+├── components/     # Reusable UI components
+├── pages/         # Page components
+├── styles/        # Global styles and Tailwind config
+├── lib/          # Utility functions and helpers
+└── App.tsx       # Main application component
 ```
 
-3. **Set up environment variables**
-   Create a `.env.local` file in the root directory with the following variables:
+## 🎨 Key Components
 
-```bash
-NEXT_PUBLIC_EMAILJS_SERVICE_ID=your_service_id
-NEXT_PUBLIC_EMAILJS_TEMPLATE_ID=your_template_id
-NEXT_PUBLIC_EMAILJS_PUBLIC_KEY=your_public_key
+- **Hero Section**: Eye-catching introduction with animated text
+- **About**: Professional background and key interests
+- **Skills**: Technical expertise with interactive badges
+- **Projects**: Showcase of recent work with live demos
+- **Contact**: Professional contact form with social links
+
+## ⚙️ Configuration
+
+### Environment Variables
+
+Create a `.env` file in the root directory:
+
+```env
+VITE_EMAILJS_SERVICE_ID=your_service_id
+VITE_EMAILJS_TEMPLATE_ID=your_template_id
+VITE_EMAILJS_PUBLIC_KEY=your_public_key
 ```
 
-4. **Run the development server**
+### Customization
 
-```bash
-npm run dev
-```
-
-Visit `http://localhost:3000` to view the website.
-
-## 📧 Email Configuration
-
-This project uses EmailJS for the contact form. To set it up:
-
-1. Create an account at [EmailJS](https://www.emailjs.com/)
-2. Create an email service and email template
-3. Update the environment variables with your credentials
-
-## 🎨 Customization
-
-- **Colors**: Edit `tailwind.config.js` to modify the color scheme
-- **Content**: Update components in `/src/components` to modify content
-- **Styles**: Modify styles in the respective component files
+- **Colors**: Modify `tailwind.config.js` for theme colors
+- **Content**: Update components in `src/components`
+- **Styling**: Adjust styles in individual component files
 
 ## 📱 Contact
 
-For any queries or suggestions, feel free to reach out:
+Feel free to reach out for any questions or collaboration:
 
-- Email: prakharkumar1314@gmail.com
-- LinkedIn: [Prakhar Kumar](https://www.linkedin.com/in/prakhar-kumar-059aa4265/)
-- Twitter: [@\_PrakharKumar](https://x.com/_PrakharKumar)
+- **Email**: [prakharkumar1314@gmail.com](mailto:prakharkumar1314@gmail.com)
+- **LinkedIn**: [Prakhar Kumar](https://www.linkedin.com/in/prakhar-kumar-059aa4265/)
+- **Twitter**: [@_PrakharKumar](https://x.com/_PrakharKumar)
+- **GitHub**: [Prakhar-Kumar-1314](https://github.com/Prakhar-Kumar-1314)
 
 ## 📄 License
 
-This project is open source and available under the [MIT License](LICENSE).
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+---
