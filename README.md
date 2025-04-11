@@ -2,7 +2,15 @@
 
 A modern, responsive personal portfolio website showcasing my projects, skills, and journey in tech. Built with React, TypeScript, and modern web technologies.
 
-![Portfolio Preview](public/portfolio-preview.png)
+> 🌟 **Live Demo**: [Visit Portfolio](https://prakhar-kumar.vercel.app)
+
+## 💫 Overview
+
+This portfolio features a modern tech stack, smooth animations, and a clean design to effectively showcase:
+- 👨‍💻 Professional background and technical expertise
+- 🛠️ Projects with live demos and source code
+- 📚 Skills and technological proficiency
+- 📬 Professional contact information and social links
 
 ## ✨ Features
 
