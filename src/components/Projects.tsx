@@ -1,39 +1,39 @@
 
-import { ExternalLink, Github } from "lucide-react";
+import { ExternalLink, Github, PenTool, Wallet, Dice1, BrainCircuit } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 
 export default function Projects() {
   const projects = [
     {
-      title: "Gamblers-Dilemma",
-      description: "A comprehensive website to understand the house edge in gambling through various games.",
-      image: "/anti-gambling.png",
-      tags: ["React", "Express.js", "Tailwind CSS", "MongoDb"],
-      demoLink: "https://anti-gambling-frontend.onrender.com/",
-      repoLink: "https://github.com/Prakhar-Kumar-1314/Gamblers-Dilemma"
-    },
-    {
-      title: "AI Image Generator",
-      description: "Web application that uses machine learning to generate images based on text descriptions.",
+      title: "Modern Web Portfolio",
+      description: "A responsive portfolio website built with React and Tailwind CSS, showcasing my projects and skills.",
       image: "/placeholder.svg",
-      tags: ["React", "Python", "TensorFlow", "API Integration"],
+      tags: ["React", "TypeScript", "Tailwind CSS", "Responsive"],
       demoLink: "#",
       repoLink: "#"
     },
     {
-      title: "Decentralized Marketplace",
-      description: "A Web3 marketplace that allows users to buy and sell digital assets using cryptocurrency.",
-      image: "/placeholder.svg",
-      tags: ["React", "Solidity", "Ethereum", "Web3.js"],
+      title: "Finflow",
+      description: "A Paytm clone providing a simulated payment experience without real money transactions, perfect for learning about digital payments.",
+      icon: <Wallet className="w-12 h-12 text-primary" />,
+      tags: ["React", "Node.js", "Express", "MongoDB"],
       demoLink: "#",
       repoLink: "#"
     },
     {
-      title: "Smart Task Manager",
-      description: "Task management application that uses AI to prioritize and categorize tasks for better productivity.",
-      image: "/placeholder.svg",
-      tags: ["React", "Node.js", "Machine Learning", "MongoDB"],
+      title: "Anti-Gambling Awareness",
+      description: "Educational platform demonstrating how casinos and gambling establishments maintain a statistical edge over players.",
+      icon: <Dice1 className="w-12 h-12 text-primary" />,
+      tags: ["React", "Data Visualization", "Statistics", "Interactive Demos"],
+      demoLink: "#",
+      repoLink: "#"
+    },
+    {
+      title: "Second Brain",
+      description: "A centralized web application helping users store, organize, and access their favorite links and resources in one convenient location.",
+      icon: <BrainCircuit className="w-12 h-12 text-primary" />,
+      tags: ["React", "Local Storage", "Tagging System", "Search Functionality"],
       demoLink: "#",
       repoLink: "#"
     }
@@ -50,12 +50,10 @@ export default function Projects() {
             className="overflow-hidden card-hover animate-slide-up opacity-0 border border-border/50"
             style={{ animationDelay: `${index * 150}ms` }}
           >
-            <div className="relative h-48 bg-muted">
-              <img 
-                src={project.image} 
-                alt={project.title} 
-                className="object-cover w-full h-full"
-              />
+            <div className="flex items-center justify-center p-6 bg-secondary/20">
+              <div className="p-4 rounded-full bg-secondary/30 flex items-center justify-center">
+                {project.icon}
+              </div>
             </div>
             <CardHeader>
               <CardTitle>{project.title}</CardTitle>
@@ -94,7 +92,7 @@ export default function Projects() {
       
       <div className="mt-12 text-center">
         <a 
-          href="https://github.com" 
+          href="https://github.com/Prakhar-Kumar-1314" 
           target="_blank" 
           rel="noopener noreferrer"
           className="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-primary hover:bg-primary/90 transition-colors"
