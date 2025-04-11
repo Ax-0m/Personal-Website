@@ -9,7 +9,9 @@ export default function About() {
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
         <div className="space-y-6 animate-slide-up opacity-0">
           <p className="text-lg">
-            Hello! I'm a passionate college student with a deep interest in modern web development, artificial intelligence, machine learning, and decentralized systems.
+            Computer Science undergraduate at PES University, Bengaluru, currently in my second year.
+            Passionate about blending academic foundations with real-world applications.
+            Actively building projects alongside coursework to strengthen both theoretical and practical knowledge.
           </p>
           
           <p className="text-lg">
