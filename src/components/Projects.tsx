@@ -1,5 +1,5 @@
 
-import { ExternalLink, Github, PenTool, Wallet, DiceIcon, BrainCircuit } from "lucide-react";
+import { ExternalLink, Github, PenTool, Wallet, Dice, BrainCircuit } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 
@@ -24,7 +24,7 @@ export default function Projects() {
     {
       title: "Anti-Gambling Awareness",
       description: "Educational platform demonstrating how casinos and gambling establishments maintain a statistical edge over players.",
-      icon: <DiceIcon className="w-12 h-12 text-primary" />,
+      icon: <Dice className="w-12 h-12 text-primary" />,
       tags: ["React", "Data Visualization", "Statistics", "Interactive Demos"],
       demoLink: "#",
       repoLink: "#"
