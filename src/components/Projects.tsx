@@ -1,39 +1,39 @@
 
-import { ExternalLink, Github, Code, LayoutGrid, Laptop, BrainCircuit, ShoppingBag } from "lucide-react";
+import { ExternalLink, Github, PenTool, Wallet, DiceIcon, BrainCircuit } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 
 export default function Projects() {
   const projects = [
     {
-      title: "Modern Web Portfolio",
-      description: "A responsive portfolio website built with React and Tailwind CSS, showcasing my projects and skills.",
-      icon: <LayoutGrid className="w-12 h-12 text-primary" />,
-      tags: ["React", "TypeScript", "Tailwind CSS", "Responsive"],
+      title: "Ink",
+      description: "An Excalidraw clone that allows users to create and share collaborative diagrams and sketches with an intuitive interface.",
+      icon: <PenTool className="w-12 h-12 text-primary" />,
+      tags: ["React", "Canvas API", "Real-time Collaboration", "SVG"],
       demoLink: "#",
       repoLink: "#"
     },
     {
-      title: "AI Image Generator",
-      description: "Web application that uses machine learning to generate images based on text descriptions.",
+      title: "Finflow",
+      description: "A Paytm clone providing a simulated payment experience without real money transactions, perfect for learning about digital payments.",
+      icon: <Wallet className="w-12 h-12 text-primary" />,
+      tags: ["React", "Node.js", "Express", "MongoDB"],
+      demoLink: "#",
+      repoLink: "#"
+    },
+    {
+      title: "Anti-Gambling Awareness",
+      description: "Educational platform demonstrating how casinos and gambling establishments maintain a statistical edge over players.",
+      icon: <DiceIcon className="w-12 h-12 text-primary" />,
+      tags: ["React", "Data Visualization", "Statistics", "Interactive Demos"],
+      demoLink: "#",
+      repoLink: "#"
+    },
+    {
+      title: "Second Brain",
+      description: "A centralized web application helping users store, organize, and access their favorite links and resources in one convenient location.",
       icon: <BrainCircuit className="w-12 h-12 text-primary" />,
-      tags: ["React", "Python", "TensorFlow", "API Integration"],
-      demoLink: "#",
-      repoLink: "#"
-    },
-    {
-      title: "Decentralized Marketplace",
-      description: "A Web3 marketplace that allows users to buy and sell digital assets using cryptocurrency.",
-      icon: <ShoppingBag className="w-12 h-12 text-primary" />,
-      tags: ["React", "Solidity", "Ethereum", "Web3.js"],
-      demoLink: "#",
-      repoLink: "#"
-    },
-    {
-      title: "Smart Task Manager",
-      description: "Task management application that uses AI to prioritize and categorize tasks for better productivity.",
-      icon: <Laptop className="w-12 h-12 text-primary" />,
-      tags: ["React", "Node.js", "Machine Learning", "MongoDB"],
+      tags: ["React", "Local Storage", "Tagging System", "Search Functionality"],
       demoLink: "#",
       repoLink: "#"
     }
