@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <rect width="512" height="512" fill="#2563eb" rx="64"/>
+  <text x="256" y="320" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="240" font-weight="700" text-anchor="middle" fill="white">
+    PK
+  </text>
+</svg> 
