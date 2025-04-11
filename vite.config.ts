@@ -56,8 +56,8 @@ export default defineConfig({
         },
       },
     },
-    // Enable minification
-    minify: 'terser',
+    // Enable minification using esbuild
+    minify: 'esbuild',
     // Enable source maps for production debugging
     sourcemap: true,
     // Optimize chunk size warning limit
