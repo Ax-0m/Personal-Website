@@ -8,17 +8,15 @@ export default function About() {
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
         <div className="space-y-6 animate-slide-up opacity-0">
           <p className="text-lg">
-            Computer Science undergraduate at PES University, Bengaluru, currently in my second year.
-            Passionate about blending academic foundations with real-world applications.
-            Actively building projects alongside coursework to strengthen both theoretical and practical knowledge.
+            Computer Science student at PES University with a passion for building modern web applications. Currently focused on full-stack development while actively contributing to real-world projects and expanding my technical expertise.
           </p>
           
           <p className="text-lg">
-            My journey in tech began with web development, where I fell in love with creating interactive and beautiful user experiences. As I've progressed, I've become increasingly fascinated by the potential of AI/ML to transform how we build software and the promise of Web3 technologies to create more open and user-centric digital systems.
+            Specializing in building scalable web applications with modern frameworks and cloud technologies. My journey in tech is driven by curiosity and a desire to solve complex problems through innovative solutions.
           </p>
           
           <p className="text-lg">
-            I'm constantly learning and building projects that combine these interests, searching for ways these technologies can complement each other to create innovative solutions for real-world problems.
+            Beyond web development, I'm fascinated by the potential of AI/ML and Web3 technologies. While these are areas I'm actively learning about, I'm excited to eventually integrate these cutting-edge technologies into my work.
           </p>
           
           <div className="flex gap-4 pt-4">
@@ -48,24 +46,24 @@ export default function About() {
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
           {[
             {
+              icon: <Code size={32} className="text-portfolio-blue" />,
+              title: "Development",
+              description: "Building scalable web applications with modern tech stacks and best practices."
+            },
+            {
               icon: <GraduationCap size={32} className="text-portfolio-purple" />,
               title: "Education",
-              description: "Computer Science student with focus on modern web technologies and artificial intelligence."
+              description: "Pursuing Computer Science while applying knowledge to real-world projects."
             },
             {
-              icon: <Code size={32} className="text-portfolio-blue" />,
-              title: "Web Development",
-              description: "Experienced in building responsive, accessible, and performant web applications."
+              icon: <Lightbulb size={32} className="text-portfolio-blue" />,
+              title: "Innovation",
+              description: "Exploring new technologies and approaches to solve complex problems."
             },
             {
-              icon: <Lightbulb size={32} className="text-portfolio-purple" />,
-              title: "AI & ML",
-              description: "Exploring machine learning algorithms and AI applications in web development."
-            },
-            {
-              icon: <Network size={32} className="text-portfolio-blue" />,
-              title: "Web3 & DApps",
-              description: "Learning about blockchain technology and building decentralized applications."
+              icon: <Network size={32} className="text-portfolio-purple" />,
+              title: "Future Focus",
+              description: "Interested in exploring AI/ML and Web3 technologies for future applications."
             }
           ].map((item, index) => (
             <div 

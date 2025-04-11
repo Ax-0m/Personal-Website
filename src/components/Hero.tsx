@@ -1,4 +1,3 @@
-
 import { ArrowDown } from "lucide-react";
 
 export default function Hero() {
@@ -20,16 +19,16 @@ export default function Hero() {
         <div className="animate-fade-in opacity-0 [animation-delay:600ms] h-12 sm:h-20 mb-6 overflow-hidden">
           <div className="h-full flex flex-col justify-start transition-transform duration-500 hover:-translate-y-1/2">
             <h2 className="text-xl sm:text-3xl font-medium h-full flex items-center justify-center">
-              Web Developer
+              Full Stack Developer
             </h2>
             <h2 className="text-xl sm:text-3xl font-medium h-full flex items-center justify-center">
-              AI/ML & Web3 Enthusiast
+              Tech Enthusiast
             </h2>
           </div>
         </div>
         
         <p className="animate-fade-in opacity-0 [animation-delay:900ms] text-lg sm:text-xl text-muted-foreground max-w-2xl mx-auto mb-8">
-          A college student passionate about building modern web applications and exploring the frontiers of decentralized systems and artificial intelligence.
+          Building modern web applications while exploring the exciting frontiers of technology. Currently focused on full-stack development with an eye towards AI and Web3 innovations.
         </p>
         
         <div className="animate-fade-in opacity-0 [animation-delay:1200ms] flex flex-col sm:flex-row gap-4 justify-center">

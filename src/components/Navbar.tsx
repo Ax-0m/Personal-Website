@@ -1,6 +1,5 @@
-
 import { useState, useEffect } from 'react';
-import { Menu, X } from 'lucide-react';
+import { Menu, X, Code2 } from 'lucide-react';
 import { cn } from '@/lib/utils';
 
 export default function Navbar() {
@@ -50,10 +49,14 @@ export default function Navbar() {
           <div className="flex justify-start lg:w-0 lg:flex-1">
             <a 
               href="#home" 
-              className="font-bold text-xl md:text-2xl text-gradient"
+              className="flex items-center space-x-2 group"
               onClick={(e) => handleNavClick(e, 'home')}
             >
-              Portfolio
+              <Code2 className="w-6 h-6 text-primary group-hover:rotate-12 transition-transform duration-300" />
+              <span className="font-bold text-xl md:text-2xl">
+                <span className="text-gradient">PK</span>
+                <span className="text-muted-foreground">.dev</span>
+              </span>
             </a>
           </div>
           

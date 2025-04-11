@@ -65,7 +65,7 @@ export default function Skills() {
       
       <div className="mt-16 text-center">
         <p className="text-lg text-muted-foreground max-w-3xl mx-auto mb-6">
-          Passionate about modern web development and emerging technologies. Currently exploring AI/ML integration in web apps and building scalable full-stack applications.
+          Passionate about building scalable web applications with modern technologies. While my current expertise lies in full-stack development, I'm continuously expanding my knowledge into emerging fields like AI/ML and Web3.
         </p>
         <a 
           href="#projects" 
