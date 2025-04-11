@@ -5,6 +5,8 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { toast } from "sonner";
+import { Label } from "@/components/ui/label";
+import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -14,6 +16,7 @@ export default function Contact() {
   });
   
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [isSent, setIsSent] = useState(false);
   
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
@@ -23,9 +26,15 @@ export default function Contact() {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     
+    // Validate form
+    if (!formData.name || !formData.email || !formData.message) {
+      toast.error("Please fill out all fields");
+      return;
+    }
+    
     setIsSubmitting(true);
     
-    // Simulate form submission
+    // Simulate form submission with a delayed response
     setTimeout(() => {
       console.log("Form submitted:", formData);
       toast.success("Message sent! I'll get back to you soon.");
@@ -38,6 +47,10 @@ export default function Contact() {
       });
       
       setIsSubmitting(false);
+      setIsSent(true);
+      
+      // Reset the sent state after 5 seconds
+      setTimeout(() => setIsSent(false), 5000);
     }, 1500);
   };
 
@@ -60,9 +73,16 @@ export default function Contact() {
                 </div>
                 <div>
                   <h4 className="font-medium">Email</h4>
-                  <a href="mailto:prakharkumar1314@gmail.com" className="text-primary hover:underline">
-                    prakharkumar1314@gmail.com
-                  </a>
+                  <Popover>
+                    <PopoverTrigger asChild>
+                      <Button variant="link" className="p-0 h-auto font-normal">
+                        prakharkumar1314@gmail.com
+                      </Button>
+                    </PopoverTrigger>
+                    <PopoverContent className="w-auto p-2">
+                      <div className="text-sm">Email copied to clipboard!</div>
+                    </PopoverContent>
+                  </Popover>
                 </div>
               </div>
               
@@ -85,11 +105,11 @@ export default function Contact() {
           </div>
           
           <div className="animate-slide-up opacity-0" style={{ animationDelay: "200ms" }}>
-            <form onSubmit={handleSubmit} className="space-y-4">
+            <form onSubmit={handleSubmit} className="space-y-4 bg-secondary/10 p-6 rounded-lg border border-border/30">
               <div>
-                <label htmlFor="name" className="block text-sm font-medium mb-1">
+                <Label htmlFor="name" className="text-sm font-medium mb-1">
                   Name
-                </label>
+                </Label>
                 <Input
                   id="name"
                   name="name"
@@ -102,9 +122,9 @@ export default function Contact() {
               </div>
               
               <div>
-                <label htmlFor="email" className="block text-sm font-medium mb-1">
+                <Label htmlFor="email" className="text-sm font-medium mb-1">
                   Email
-                </label>
+                </Label>
                 <Input
                   id="email"
                   name="email"
@@ -118,9 +138,9 @@ export default function Contact() {
               </div>
               
               <div>
-                <label htmlFor="message" className="block text-sm font-medium mb-1">
+                <Label htmlFor="message" className="text-sm font-medium mb-1">
                   Message
-                </label>
+                </Label>
                 <Textarea
                   id="message"
                   name="message"
@@ -144,6 +164,14 @@ export default function Contact() {
                       <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
                     </svg>
                     Sending...
+                  </span>
+                ) : isSent ? (
+                  <span className="flex items-center">
+                    <svg className="mr-2 h-4 w-4 text-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                      <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                      <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                    </svg>
+                    Sent Successfully
                   </span>
                 ) : (
                   <span className="flex items-center">
