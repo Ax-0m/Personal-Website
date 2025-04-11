@@ -1,7 +1,6 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 import path from "path";
-import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -9,17 +8,7 @@ export default defineConfig({
     port: 5173,
     strictPort: true
   },
-  plugins: [
-    react({
-      jsxRuntime: 'automatic',
-      jsxImportSource: 'react',
-      babel: {
-        plugins: [
-          ['@babel/plugin-transform-react-jsx', { runtime: 'automatic' }]
-        ]
-      }
-    })
-  ],
+  plugins: [react()],
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
@@ -27,5 +16,31 @@ export default defineConfig({
   },
   define: {
     __WS_TOKEN__: JSON.stringify(process.env.WS_TOKEN || "development"),
-  }
+  },
+  build: {
+    // Enable code splitting
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          'react-vendor': ['react', 'react-dom', 'react-router-dom'],
+          'ui-vendor': ['@radix-ui/react-*'],
+          'utils-vendor': ['@tanstack/react-query', 'zod', 'class-variance-authority'],
+        },
+      },
+    },
+    // Enable minification
+    minify: 'terser',
+    // Enable source maps for production debugging
+    sourcemap: true,
+    // Optimize chunk size warning limit
+    chunkSizeWarningLimit: 1000,
+  },
+  // Enable CSS code splitting
+  css: {
+    modules: {
+      localsConvention: 'camelCase',
+    },
+  },
+  // Optimize asset handling
+  assetsInclude: ['**/*.glb', '**/*.gltf'],
 });
