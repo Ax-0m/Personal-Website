@@ -77,7 +77,7 @@ export default function Footer() {
           </div>
           
           <div className="text-sm text-muted-foreground">
-            &copy; {new Date().getFullYear()} Prakhar. All rights reserved.
+            &copy; {new Date().getFullYear()} Prakhar Kumar. All rights reserved.
           </div>
         </div>
       </div>
