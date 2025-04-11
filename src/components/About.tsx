@@ -1,4 +1,3 @@
-
 import { GraduationCap, Lightbulb, Code, Network } from "lucide-react";
 
 export default function About() {
@@ -26,12 +25,20 @@ export default function About() {
             <a 
               href="#contact" 
               className="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-primary hover:bg-primary/90 transition-colors"
+              onClick={(e) => {
+                e.preventDefault();
+                document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
+              }}
             >
               Get In Touch
             </a>
             <a 
               href="#projects" 
               className="inline-flex items-center justify-center px-6 py-3 border border-primary text-base font-medium rounded-md text-primary bg-transparent hover:bg-primary/10 transition-colors"
+              onClick={(e) => {
+                e.preventDefault();
+                document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' });
+              }}
             >
               See My Projects
             </a>
