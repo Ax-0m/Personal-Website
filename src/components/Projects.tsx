@@ -24,7 +24,7 @@ export default function Projects() {
     {
       title: "Ink",
       description: "A real-time collaborative whiteboard tool for sketching ideas, diagrams, and visuals with simplicity and style.",
-      icon: <Dice1 className="w-12 h-12 text-primary" />,
+      icon: <PenTool className="w-12 h-12 text-primary" />,
       tags: ["Next.js", "WebSocket", "PostgreSQL", "Prisma"],
       demoLink: "#",
       repoLink: "https://github.com/Prakhar-Kumar-1314/Draw-app"
