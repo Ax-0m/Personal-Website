@@ -13,7 +13,7 @@ A modern, responsive personal portfolio website built with Next.js and TypeScrip
 
 ## 🛠️ Tech Stack
 
-- **Framework**: Next.js
+- **Framework**: React.js
 - **Language**: TypeScript
 - **Styling**: Tailwind CSS
 - **UI Components**: shadcn/ui
