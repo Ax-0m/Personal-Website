@@ -6,34 +6,34 @@ import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle }
 export default function Projects() {
   const projects = [
     {
-      title: "Modern Web Portfolio",
-      description: "A responsive portfolio website built with React and Tailwind CSS, showcasing my projects and skills.",
-      image: "/placeholder.svg",
-      tags: ["React", "TypeScript", "Tailwind CSS", "Responsive"],
-      demoLink: "#",
-      repoLink: "#"
+      title: "Gamblers-Dilemma",
+      description: "A comprehensive website to understand the house edge in gambling through various games.",
+      icon: <Dice1 className="w-12 h-12 text-primary" />,
+      tags: ["React", "TypeScript", "Tailwind CSS", "Statistics", "MongoDB"],
+      demoLink: "https://anti-gambling-frontend.onrender.com/",
+      repoLink: "https://github.com/Prakhar-Kumar-1314/Gamblers-Dilemma"
     },
     {
-      title: "Finflow",
-      description: "A Paytm clone providing a simulated payment experience without real money transactions, perfect for learning about digital payments.",
+      title: "FinFlow",
+      description: "Payment Platform PSL is a secure and scalable full-stack web application that replicates the core features of a digital wallet system.",
       icon: <Wallet className="w-12 h-12 text-primary" />,
       tags: ["React", "Node.js", "Express", "MongoDB"],
       demoLink: "#",
-      repoLink: "#"
+      repoLink: "https://github.com/Prakhar-Kumar-1314/FinFlow"
     },
     {
-      title: "Anti-Gambling Awareness",
-      description: "Educational platform demonstrating how casinos and gambling establishments maintain a statistical edge over players.",
+      title: "Ink",
+      description: "A real-time collaborative whiteboard tool for sketching ideas, diagrams, and visuals with simplicity and style.",
       icon: <Dice1 className="w-12 h-12 text-primary" />,
-      tags: ["React", "Data Visualization", "Statistics", "Interactive Demos"],
+      tags: ["Next.js", "WebSocket", "PostgreSQL", "Prisma"],
       demoLink: "#",
-      repoLink: "#"
+      repoLink: "https://github.com/Prakhar-Kumar-1314/Draw-app"
     },
     {
       title: "Second Brain",
       description: "A centralized web application helping users store, organize, and access their favorite links and resources in one convenient location.",
       icon: <BrainCircuit className="w-12 h-12 text-primary" />,
-      tags: ["React", "Local Storage", "Tagging System", "Search Functionality"],
+      tags: ["React", "TypeScript" , "Local Storage", "Tagging System", "Search Functionality"],
       demoLink: "#",
       repoLink: "#"
     }
