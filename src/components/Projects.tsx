@@ -1,5 +1,5 @@
 
-import { ExternalLink, Github } from "lucide-react";
+import { ExternalLink, Github, Code, LayoutGrid, Laptop, BrainCircuit, ShoppingBag } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 
@@ -8,7 +8,7 @@ export default function Projects() {
     {
       title: "Modern Web Portfolio",
       description: "A responsive portfolio website built with React and Tailwind CSS, showcasing my projects and skills.",
-      image: "/placeholder.svg",
+      icon: <LayoutGrid className="w-12 h-12 text-primary" />,
       tags: ["React", "TypeScript", "Tailwind CSS", "Responsive"],
       demoLink: "#",
       repoLink: "#"
@@ -16,7 +16,7 @@ export default function Projects() {
     {
       title: "AI Image Generator",
       description: "Web application that uses machine learning to generate images based on text descriptions.",
-      image: "/placeholder.svg",
+      icon: <BrainCircuit className="w-12 h-12 text-primary" />,
       tags: ["React", "Python", "TensorFlow", "API Integration"],
       demoLink: "#",
       repoLink: "#"
@@ -24,7 +24,7 @@ export default function Projects() {
     {
       title: "Decentralized Marketplace",
       description: "A Web3 marketplace that allows users to buy and sell digital assets using cryptocurrency.",
-      image: "/placeholder.svg",
+      icon: <ShoppingBag className="w-12 h-12 text-primary" />,
       tags: ["React", "Solidity", "Ethereum", "Web3.js"],
       demoLink: "#",
       repoLink: "#"
@@ -32,7 +32,7 @@ export default function Projects() {
     {
       title: "Smart Task Manager",
       description: "Task management application that uses AI to prioritize and categorize tasks for better productivity.",
-      image: "/placeholder.svg",
+      icon: <Laptop className="w-12 h-12 text-primary" />,
       tags: ["React", "Node.js", "Machine Learning", "MongoDB"],
       demoLink: "#",
       repoLink: "#"
@@ -50,12 +50,10 @@ export default function Projects() {
             className="overflow-hidden card-hover animate-slide-up opacity-0 border border-border/50"
             style={{ animationDelay: `${index * 150}ms` }}
           >
-            <div className="relative h-48 bg-muted">
-              <img 
-                src={project.image} 
-                alt={project.title} 
-                className="object-cover w-full h-full"
-              />
+            <div className="flex items-center justify-center p-6 bg-secondary/20">
+              <div className="p-4 rounded-full bg-secondary/30 flex items-center justify-center">
+                {project.icon}
+              </div>
             </div>
             <CardHeader>
               <CardTitle>{project.title}</CardTitle>
@@ -94,7 +92,7 @@ export default function Projects() {
       
       <div className="mt-12 text-center">
         <a 
-          href="https://github.com" 
+          href="https://github.com/Prakhar-Kumar-1314" 
           target="_blank" 
           rel="noopener noreferrer"
           className="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-primary hover:bg-primary/90 transition-colors"
