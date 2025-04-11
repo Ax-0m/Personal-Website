@@ -1,114 +1,129 @@
-# 🚀 Personal Portfolio Website
+# Prakhar Kumar - Personal Website
 
-A modern, responsive personal portfolio website showcasing my projects, skills, and journey in tech. Built with React, TypeScript, and modern web technologies.
+A modern, responsive personal website built with React, TypeScript, and Vite. This website showcases my portfolio, skills, and projects with a focus on performance and user experience.
 
-> 🌟 **Live Demo**: [Visit Portfolio](https://prakhar-kumar.vercel.app)
+## 🚀 Features
 
-## 💫 Overview
+- **Modern Tech Stack**
+  - React 18 with TypeScript
+  - Vite for fast development and building
+  - Tailwind CSS for styling
+  - Shadcn UI components
+  - React Three Fiber for 3D elements
 
-This portfolio features a modern tech stack, smooth animations, and a clean design to effectively showcase:
-- 👨‍💻 Professional background and technical expertise
-- 🛠️ Projects with live demos and source code
-- 📚 Skills and technological proficiency
-- 📬 Professional contact information and social links
+- **Performance Optimized**
+  - Lazy loading for sections
+  - Code splitting
+  - Optimized assets
+  - Smooth animations
+  - Intersection Observer for efficient rendering
 
-## ✨ Features
+- **SEO Friendly**
+  - Proper meta tags
+  - Structured data
+  - Semantic HTML
+  - Open Graph support
+  - Twitter card integration
 
-- 🎨 **Modern Design** - Clean and professional UI with smooth animations
-- 📱 **Fully Responsive** - Perfect display on all devices
-- 🌙 **Dynamic UI Components** - Built with shadcn/ui for consistent design
-- 📧 **Contact Form** - Integrated with EmailJS for seamless communication
-- ⚡ **Fast Performance** - Optimized loading and rendering
-- 🎯 **Smooth Navigation** - Seamless scrolling and section transitions
-- 🔍 **SEO Optimized** - Meta tags and sitemap included
+- **Responsive Design**
+  - Mobile-first approach
+  - Adaptive layouts
+  - Touch-friendly interactions
+  - Cross-browser compatibility
 
 ## 🛠️ Tech Stack
 
-- **Frontend Framework**: React with TypeScript
-- **Build Tool**: Vite
-- **Styling**: 
-  - Tailwind CSS for utility-first styling
-  - shadcn/ui for UI components
-- **Animations**: Custom CSS animations
-- **Icons**: Lucide Icons
-- **Contact**: EmailJS integration
-- **Package Manager**: Bun
+- **Frontend**
+  - React 18
+  - TypeScript
+  - Vite
+  - Tailwind CSS
+  - Shadcn UI
+  - React Three Fiber
+  - React Router
 
-## 🚀 Quick Start
+- **Development Tools**
+  - ESLint
+  - Prettier
+  - TypeScript
+  - PostCSS
+  - Autoprefixer
 
-1. **Clone the repository**
+## 📦 Installation
+
+1. Clone the repository:
    ```bash
-   git clone https://github.com/Prakhar-Kumar-1314/Personal-Website.git
-   cd Personal-Website
+   git clone https://github.com/yourusername/personal-website.git
+   cd personal-website
    ```
 
-2. **Install dependencies**
+2. Install dependencies:
    ```bash
-   # Using Bun (recommended)
-   bun install
-
-   # Using npm
    npm install
+   # or
+   yarn install
+   # or
+   bun install
    ```
 
-3. **Start development server**
+3. Start the development server:
    ```bash
+   npm run dev
+   # or
+   yarn dev
+   # or
    bun run dev
    ```
 
-4. **Build for production**
+4. Build for production:
    ```bash
+   npm run build
+   # or
+   yarn build
+   # or
    bun run build
    ```
 
-## 📁 Project Structure
+## 🎨 Project Structure
 
 ```
 src/
-├── components/     # Reusable UI components
-├── pages/         # Page components
-├── styles/        # Global styles and Tailwind config
-├── lib/          # Utility functions and helpers
-└── App.tsx       # Main application component
+├── components/         # Reusable components
+├── pages/             # Page components
+├── lib/               # Utility functions
+├── styles/            # Global styles
+└── assets/            # Static assets
 ```
 
-## 🎨 Key Components
+## 🚀 Performance Features
 
-- **Hero Section**: Eye-catching introduction with animated text
-- **About**: Professional background and key interests
-- **Skills**: Technical expertise with interactive badges
-- **Projects**: Showcase of recent work with live demos
-- **Contact**: Professional contact form with social links
+- **Lazy Loading**: Components load as you scroll
+- **Code Splitting**: Optimized bundle sizes
+- **Image Optimization**: Next-gen formats and lazy loading
+- **Smooth Animations**: Hardware-accelerated transitions
+- **Progressive Loading**: Content appears smoothly
 
-## ⚙️ Configuration
+## 🔍 SEO Features
 
-### Environment Variables
+- Meta tags for social sharing
+- Structured data for search engines
+- Semantic HTML structure
+- Mobile-friendly design
+- Fast loading times
 
-Create a `.env` file in the root directory:
+## 🤝 Contributing
 
-```env
-VITE_EMAILJS_SERVICE_ID=your_service_id
-VITE_EMAILJS_TEMPLATE_ID=your_template_id
-VITE_EMAILJS_PUBLIC_KEY=your_public_key
-```
-
-### Customization
-
-- **Colors**: Modify `tailwind.config.js` for theme colors
-- **Content**: Update components in `src/components`
-- **Styling**: Adjust styles in individual component files
-
-## 📱 Contact
-
-Feel free to reach out for any questions or collaboration:
-
-- **Email**: [prakharkumar1314@gmail.com](mailto:prakharkumar1314@gmail.com)
-- **LinkedIn**: [Prakhar Kumar](https://www.linkedin.com/in/prakhar-kumar-059aa4265/)
-- **Twitter**: [@_PrakharKumar](https://x.com/_PrakharKumar)
-- **GitHub**: [Prakhar-Kumar-1314](https://github.com/Prakhar-Kumar-1314)
+Contributions are welcome! Please feel free to submit a Pull Request.
 
 ## 📄 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 👨‍💻 Author
+
+**Prakhar Kumar**
+- [GitHub](https://github.com/Prakhar-Kumar-1314)
+- [LinkedIn](https://www.linkedin.com/in/prakhar-kumar-059aa4265/)
+- [Twitter](https://x.com/_PrakharKumar)
 
 ---
