@@ -55,7 +55,7 @@ export default function Hero() {
         <h1 className="animate-fade-in opacity-0 [animation-delay:300ms] text-4xl sm:text-5xl md:text-7xl font-bold tracking-tight mb-6">
           Hi, I'm{" "}
           <a 
-            href="https://github.com/prakhar-kumar-1314" 
+            href="https://linktr.ee/prakharkumar" 
             target="_blank" 
             rel="noopener noreferrer"
             className="text-primary relative inline-block transition-all duration-300 hover:scale-105"
