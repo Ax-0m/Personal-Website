@@ -54,18 +54,23 @@ export default function Hero() {
       <div className="content-wrapper max-w-[90rem] mx-auto text-center relative z-10">
         <h1 className="animate-fade-in opacity-0 [animation-delay:300ms] text-4xl sm:text-5xl md:text-7xl font-bold tracking-tight mb-6">
           Hi, I'm{" "}
-          <span className="text-primary relative inline-block">
-            <span className="absolute -inset-1 bg-primary/20 blur-lg -z-10 rounded-lg"></span>
+          <a 
+            href="https://github.com/prakhar-kumar-1314" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="text-primary relative inline-block transition-all duration-300 hover:scale-105"
+          >
+            <span className="absolute -inset-1 bg-primary/20 blur-lg -z-10 rounded-lg transition-opacity duration-300 hover:opacity-100"></span>
             <span className="relative">Prakhar</span>
-          </span>
+          </a>
         </h1>
         
         <div className="animate-fade-in opacity-0 [animation-delay:600ms] h-12 sm:h-20 mb-6 overflow-hidden">
-          <div className="h-full flex flex-col justify-start transition-transform duration-500 hover:-translate-y-1/2">
-            <h2 className="text-xl sm:text-3xl font-medium h-full flex items-center justify-center text-foreground/90">
+          <div className="h-full flex flex-col justify-start transition-all duration-500 hover:scale-105">
+            <h2 className="text-xl sm:text-3xl font-medium h-full flex items-center justify-center text-foreground/90 transition-opacity duration-300 hover:opacity-100">
               Full Stack Developer
             </h2>
-            <h2 className="text-xl sm:text-3xl font-medium h-full flex items-center justify-center text-foreground/90">
+            <h2 className="text-xl sm:text-3xl font-medium h-full flex items-center justify-center text-foreground/90 transition-opacity duration-300 hover:opacity-100">
               Tech Enthusiast
             </h2>
           </div>
