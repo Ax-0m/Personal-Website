@@ -1,18 +1,16 @@
 import { ArrowDown } from "lucide-react";
-import { useEffect, useRef } from "react";
+import { useRef, useEffect } from "react";
 
 export default function Hero() {
   const leftBlobRef = useRef<HTMLDivElement>(null);
-  const rightBlobRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const handleScroll = () => {
-      if (leftBlobRef.current && rightBlobRef.current) {
+      if (leftBlobRef.current) {
         const scrollY = window.scrollY;
         const speed = 0.5;
         
         leftBlobRef.current.style.transform = `translateY(${-scrollY * speed}px)`;
-        rightBlobRef.current.style.transform = `translateY(${scrollY * speed}px)`;
       }
     };
 
@@ -23,16 +21,12 @@ export default function Hero() {
   const scrollToSection = (sectionId: string) => {
     const section = document.getElementById(sectionId);
     if (section) {
-      // Preload the section component
-      import(`@/components/${sectionId.charAt(0).toUpperCase() + sectionId.slice(1)}`);
-      
-      // Smooth scroll to the section
       section.scrollIntoView({ behavior: 'smooth' });
     }
   };
 
   return (
-    <section id="home" className="relative min-h-screen flex items-center justify-center px-4 sm:px-6 overflow-hidden">
+    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background gradient */}
       <div 
         className="absolute inset-0 pointer-events-none opacity-20" 
@@ -45,10 +39,6 @@ export default function Hero() {
       <div 
         ref={leftBlobRef} 
         className="absolute top-0 left-0 w-[500px] h-[500px] bg-primary/10 rounded-full blur-3xl -translate-x-1/2 -translate-y-1/2 transition-transform duration-300" 
-      />
-      <div 
-        ref={rightBlobRef} 
-        className="absolute bottom-0 right-0 w-[500px] h-[500px] bg-primary/10 rounded-full blur-3xl translate-x-1/2 translate-y-1/2 transition-transform duration-300" 
       />
       
       <div className="content-wrapper max-w-[90rem] mx-auto text-center relative z-10">
@@ -82,12 +72,10 @@ export default function Hero() {
         
         <div className="animate-fade-in opacity-0 [animation-delay:1200ms] flex flex-col sm:flex-row gap-4 justify-center">
           <a 
-            href="#projects" 
+            href="https://github.com/Prakhar-Kumar-1314" 
+            target="_blank" 
+            rel="noopener noreferrer"
             className="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-primary hover:bg-primary/90 transition-all duration-300 hover:scale-105 shadow-lg shadow-primary/20"
-            onClick={(e) => {
-              e.preventDefault();
-              scrollToSection('projects');
-            }}
           >
             View My Work
           </a>
