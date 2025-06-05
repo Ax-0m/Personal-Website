@@ -11,7 +11,7 @@ export default function Projects() {
       icon: <Dice1 className="w-12 h-12 text-primary" />,
       tags: ["React", "TypeScript", "Tailwind CSS", "Statistics", "MongoDB"],
       demoLink: "https://anti-gambling-frontend.onrender.com/",
-      repoLink: "https://github.com/Prakhar-Kumar-1314/Gamblers-Dilemma"
+      repoLink: "https://github.com/Ax-0m/Gamblers-Dilemma"
     },
     {
       title: "FinFlow",
@@ -19,7 +19,7 @@ export default function Projects() {
       icon: <Wallet className="w-12 h-12 text-primary" />,
       tags: ["React", "Node.js", "Express", "MongoDB"],
       demoLink: "#",
-      repoLink: "https://github.com/Prakhar-Kumar-1314/FinFlow"
+      repoLink: "https://github.com/Ax-0m/FinFlow"
     },
     {
       title: "Ink",
@@ -27,7 +27,7 @@ export default function Projects() {
       icon: <PenTool className="w-12 h-12 text-primary" />,
       tags: ["Next.js", "WebSocket", "PostgreSQL", "Prisma"],
       demoLink: "#",
-      repoLink: "https://github.com/Prakhar-Kumar-1314/Draw-app"
+      repoLink: "https://github.com/Ax-0m/Draw-app"
     },
     {
       title: "Second Brain",
@@ -35,7 +35,7 @@ export default function Projects() {
       icon: <BrainCircuit className="w-12 h-12 text-primary" />,
       tags: ["React", "TypeScript" , "Local Storage", "Tagging System", "Search Functionality"],
       demoLink: "#",
-      repoLink: "#"
+      repoLink: "https://github.com/Ax-0m/Second-Brain"
     }
   ];
 
@@ -92,7 +92,7 @@ export default function Projects() {
       
       <div className="mt-12 text-center">
         <a 
-          href="https://github.com/Prakhar-Kumar-1314" 
+          href="https://github.com/Ax-0m" 
           target="_blank" 
           rel="noopener noreferrer"
           className="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-primary hover:bg-primary/90 transition-colors"

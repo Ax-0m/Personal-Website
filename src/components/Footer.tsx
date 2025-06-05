@@ -8,7 +8,7 @@ export default function Footer() {
           {/* Social Links */}
           <div className="flex space-x-6 mb-8">
             <a 
-              href="https://github.com/Prakhar-Kumar-1314" 
+              href="https://github.com/Ax-0m" 
               target="_blank" 
               rel="noopener noreferrer" 
               className="h-10 w-10 rounded-full bg-background flex items-center justify-center hover:bg-primary hover:text-white transition-all duration-300 transform hover:scale-105"

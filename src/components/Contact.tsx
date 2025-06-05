@@ -115,7 +115,7 @@ export default function Contact() {
                     <span className="text-muted-foreground">•</span>
                     <a href="https://x.com/_PrakharKumar" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">Twitter</a>
                     <span className="text-muted-foreground">•</span>
-                    <a href="https://github.com/Prakhar-Kumar-1314" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">GitHub</a>
+                    <a href="https://github.com/Ax-0m" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">GitHub</a>
                   </div>
                 </div>
               </div>
