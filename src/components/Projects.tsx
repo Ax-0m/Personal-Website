@@ -1,4 +1,3 @@
-
 import { ExternalLink, Github, PenTool, Wallet, Dice1, BrainCircuit } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
@@ -10,7 +9,6 @@ export default function Projects() {
       description: "A comprehensive website to understand the house edge in gambling through various games.",
       icon: <Dice1 className="w-12 h-12 text-primary" />,
       tags: ["React", "TypeScript", "Tailwind CSS", "Statistics", "MongoDB"],
-      demoLink: "https://anti-gambling-frontend.onrender.com/",
       repoLink: "https://github.com/Ax-0m/Gamblers-Dilemma"
     },
     {
@@ -18,7 +16,6 @@ export default function Projects() {
       description: "Payment Platform PSL is a secure and scalable full-stack web application that replicates the core features of a digital wallet system.",
       icon: <Wallet className="w-12 h-12 text-primary" />,
       tags: ["React", "Node.js", "Express", "MongoDB"],
-      demoLink: "#",
       repoLink: "https://github.com/Ax-0m/FinFlow"
     },
     {
@@ -26,7 +23,6 @@ export default function Projects() {
       description: "A real-time collaborative whiteboard tool for sketching ideas, diagrams, and visuals with simplicity and style.",
       icon: <PenTool className="w-12 h-12 text-primary" />,
       tags: ["Next.js", "WebSocket", "PostgreSQL", "Prisma"],
-      demoLink: "#",
       repoLink: "https://github.com/Ax-0m/Draw-app"
     },
     {
@@ -34,7 +30,6 @@ export default function Projects() {
       description: "A centralized web application helping users store, organize, and access their favorite links and resources in one convenient location.",
       icon: <BrainCircuit className="w-12 h-12 text-primary" />,
       tags: ["React", "TypeScript" , "Local Storage", "Tagging System", "Search Functionality"],
-      demoLink: "#",
       repoLink: "https://github.com/Ax-0m/Second-Brain"
     }
   ];
@@ -68,22 +63,14 @@ export default function Projects() {
                 ))}
               </div>
             </CardContent>
-            <CardFooter className="flex justify-between">
-              <a 
-                href={project.demoLink} 
-                className="inline-flex items-center text-sm font-medium text-primary hover:underline"
-                target="_blank" 
-                rel="noopener noreferrer"
-              >
-                <ExternalLink size={16} className="mr-1" /> Live Demo
-              </a>
+            <CardFooter className="flex justify-center pt-4">
               <a 
                 href={project.repoLink} 
-                className="inline-flex items-center text-sm font-medium text-primary hover:underline"
+                className="inline-flex items-center px-4 py-2 text-sm font-medium rounded-md bg-primary/10 text-primary hover:bg-primary/20 transition-colors"
                 target="_blank" 
                 rel="noopener noreferrer"
               >
-                <Github size={16} className="mr-1" /> Source Code
+                <Github size={16} className="mr-2" /> View Source Code
               </a>
             </CardFooter>
           </Card>
