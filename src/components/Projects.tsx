@@ -1,36 +1,43 @@
-import { ExternalLink, Github, PenTool, Wallet, Dice1, BrainCircuit } from "lucide-react";
+import { ExternalLink, Github, PenTool, Wallet, Dice1, BrainCircuit, MessageSquare, Key } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 
 export default function Projects() {
   const projects = [
     {
-      title: "Gamblers-Dilemma",
-      description: "A comprehensive website to understand the house edge in gambling through various games.",
-      icon: <Dice1 className="w-12 h-12 text-primary" />,
-      tags: ["React", "TypeScript", "Tailwind CSS", "Statistics", "MongoDB"],
-      repoLink: "https://github.com/Ax-0m/Gamblers-Dilemma"
+      title: "Pulse",
+      description: "AI Chat Platform with Multiple Providers - A microservices platform integrating GPT-4, Claude Sonnet 4, and Llama 3.3 with real-time provider switching and file analysis capabilities.",
+      icon: <MessageSquare className="w-12 h-12 text-primary" />,
+      tags: ["Python", "FastAPI", "Express.js", "PostgreSQL", "Prisma", "React"],
+      repoLink: "https://github.com/Ax-0m/Pulse"
+    },
+    {
+      title: "Solana Wallet Backend",
+      description: "Secure Web3 Key Management system with JWT authentication, encrypted backend storage for private keys, and RESTful APIs for SOL transfers and transaction signing.",
+      icon: <Key className="w-12 h-12 text-primary" />,
+      tags: ["Node.js", "Express.js", "MongoDB", "Solana Web3.js", "React"],
+      repoLink: "https://github.com/Ax-0m/Solana-Wallet"
     },
     {
       title: "FinFlow",
-      description: "Payment Platform PSL is a secure and scalable full-stack web application that replicates the core features of a digital wallet system.",
+      description: "Secure Money Transfer Platform with user authentication and balance management, featuring RESTful APIs integrated with a responsive React frontend.",
       icon: <Wallet className="w-12 h-12 text-primary" />,
-      tags: ["React", "Node.js", "Express", "MongoDB"],
+      tags: ["MERN Stack", "MongoDB", "Express.js", "React", "Node.js"],
       repoLink: "https://github.com/Ax-0m/FinFlow"
     },
     {
-      title: "Ink",
-      description: "A real-time collaborative whiteboard tool for sketching ideas, diagrams, and visuals with simplicity and style.",
-      icon: <PenTool className="w-12 h-12 text-primary" />,
-      tags: ["Next.js", "WebSocket", "PostgreSQL", "Prisma"],
-      repoLink: "https://github.com/Ax-0m/Draw-app"
+      title: "Second Brain",
+      description: "Centralized Link Management application developed with TypeScript, featuring secure authentication and efficient link categorization using the MERN stack.",
+      icon: <BrainCircuit className="w-12 h-12 text-primary" />,
+      tags: ["TypeScript", "MERN Stack"],
+      repoLink: "https://github.com/Ax-0m/Second-Brain"
     },
     {
-      title: "Second Brain",
-      description: "A centralized web application helping users store, organize, and access their favorite links and resources in one convenient location.",
-      icon: <BrainCircuit className="w-12 h-12 text-primary" />,
-      tags: ["React", "TypeScript" , "Local Storage", "Tagging System", "Search Functionality"],
-      repoLink: "https://github.com/Ax-0m/Second-Brain"
+      title: "Ink",
+      description: "Real-time Collaborative Whiteboard with WebSocket-based synchronization for multi-user collaboration, featuring real-time drawing, shapes, and text capabilities.",
+      icon: <PenTool className="w-12 h-12 text-primary" />,
+      tags: ["Next.js", "WebSocket", "Prisma", "PostgreSQL"],
+      repoLink: "https://github.com/Ax-0m/Draw-app"
     }
   ];
 
